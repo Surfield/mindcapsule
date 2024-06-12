@@ -12,8 +12,9 @@ const Pricing = () => {
         <div className="flex flex-col text-center w-full mb-20">
           <p className="font-medium text-primary mb-8">Pricing</p>
           <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
-            Save hours of repetitive code and ship faster!
+            A full-time product engineering team, at a fraction of the cost.
           </h2>
+          Our pricing model is as clear and straight forward as it can get. Pay a simple, flat monthly subscription fee and unlock unlimited access to a software development team. No hidden charges, no additional fees. You are in full control of canceling your subscription at anytime.
         </div>
 
         <div className="relative flex justify-center flex-col lg:flex-row items-center lg:items-stretch gap-8">
@@ -57,14 +58,14 @@ const Pricing = () => {
                       </p>
                     </div>
                   )}
-                  <p className={`text-5xl tracking-tight font-extrabold`}>
+                 {plan.price ? <p className={`text-5xl tracking-tight font-extrabold`}>
                     ${plan.price}
-                  </p>
-                  <div className="flex flex-col justify-end mb-[4px]">
+                  </p>:""}
+                  {plan.price ? <div className="flex flex-col justify-end mb-[4px]">
                     <p className="text-xs text-base-content/60 uppercase font-semibold">
                       USD
                     </p>
-                  </div>
+                  </div>:""}
                 </div>
                 {plan.features && (
                   <ul className="space-y-2.5 leading-relaxed text-base flex-1">
@@ -90,10 +91,6 @@ const Pricing = () => {
                 )}
                 <div className="space-y-2">
                   <ButtonCheckout priceId={plan.priceId} />
-
-                  <p className="flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative">
-                    Pay once. Access forever.
-                  </p>
                 </div>
               </div>
             </div>

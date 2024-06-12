@@ -13,22 +13,21 @@ interface FAQItemProps {
 
 const faqList: FAQItemProps[] = [
   {
-    question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
+    question: "What industries do you specialize in?",
+    answer: <div className="space-y-2 leading-relaxed">We are industry and sector agnostic having worked in a variety of verticals like e-commerce, finance, healthcare and music to name a few</div>,
   },
   {
-    question: "Can I get a refund?",
+    question: "What happens if I don't need development work for a certain month?",
     answer: (
       <p>
-        Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
+        If you don't need any work for a specific month, you can simply pause your subscription and resume it when you need our services again. There are no penalties or additional fees for pausing your subscription.
       </p>
     ),
   },
   {
-    question: "I have another question",
+    question: "Why wouldn't I just hire a full-time developer?",
     answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+      <div className="space-y-2 leading-relaxed">Excellent question! Hiring a full-time senior developer can be costly, with an average annual salary exceeding $120,000, plus the extra costs of benefits. The hiring process itself can also be lengthy and challenging. More importantly, your workload might fluctuate, leading to periods when you don't have enough tasks to fully utilize a full-time developer. By using our subscription agency membership, you only pay for the development work you need, enjoy the flexibility to pause or resume your subscription as required, and avoid the financial burden of an underutilized in-house developer.</div>
     ),
   },
 ];
@@ -100,7 +99,7 @@ const FAQ = () => {
         <div className="flex flex-col text-left basis-1/2">
           <p className="inline-block font-semibold text-primary mb-4">FAQ</p>
           <p className="sm:text-4xl text-3xl font-extrabold text-base-content">
-            Frequently Asked Questions
+          You got questions?<br /> We got answers!
           </p>
         </div>
 

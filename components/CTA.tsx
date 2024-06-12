@@ -1,5 +1,6 @@
 import Image from "next/image";
 import config from "@/config";
+import Link from "next/link";
 
 const CTA = () => {
   return (
@@ -14,16 +15,18 @@ const CTA = () => {
       <div className="relative hero-content text-center text-neutral-content p-8">
         <div className="flex flex-col items-center max-w-xl p-8 md:p-0">
           <h2 className="font-bold text-3xl md:text-5xl tracking-tight mb-8 md:mb-12">
-            Boost your app, launch, earn
+            Let's get ready to launch
           </h2>
           <p className="text-lg opacity-80 mb-12 md:mb-16">
-            Don&apos;t waste time integrating APIs or designing a pricing
-            section...
+            Don&apos;t waste time building the traditional way
           </p>
 
-          <button className="btn btn-primary btn-wide">
-            Get {config.appName}
-          </button>
+          <Link
+          className="btn btn-primary btn-wide rounded-full"
+          href='https://cal.com/mindcapsule/30min?date=2024-06-11&month=2024-06'
+        >
+          Book A Call
+        </Link>
         </div>
       </div>
     </section>
