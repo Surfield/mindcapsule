@@ -7,7 +7,7 @@ import type { JSX } from "react";
 // Just import the FAQ & add your FAQ content to the const faqList arrayy below.
 
 interface FAQItemProps {
-  question: string;
+  question: string | JSX.Element;
   answer: JSX.Element;
 }
 
@@ -17,7 +17,7 @@ const faqList: FAQItemProps[] = [
     answer: <div className="space-y-2 leading-relaxed">We are industry and sector agnostic having worked in a variety of verticals like e-commerce, finance, healthcare and music to name a few</div>,
   },
   {
-    question: "What happens if I don&apos;t need development work for a certain month?",
+    question: <span>What happens if I don&apos;t need development work for a certain month?</span>,
     answer: (
       <p>
         If you don&apos;t need any work for a specific month, you can simply pause your subscription and resume it when you need our services again. There are no penalties or additional fees for pausing your subscription.
@@ -25,7 +25,7 @@ const faqList: FAQItemProps[] = [
     ),
   },
   {
-    question: "Why wouldn&apos;t I just hire a full-time developer?",
+    question: (<span>Why wouldn&apos;t I just hire a full-time developer?</span>),
     answer: (
       <div className="space-y-2 leading-relaxed">Excellent question! Hiring a full-time senior developer can be costly, with an average annual salary exceeding $120,000, plus the extra costs of benefits. The hiring process itself can also be lengthy and challenging. More importantly, your workload might fluctuate, leading to periods when you don&apos;t have enough tasks to fully utilize a full-time developer. By using our subscription agency membership, you only pay for the development work you need, enjoy the flexibility to pause or resume your subscription as required, and avoid the financial burden of an underutilized in-house developer.</div>
     ),

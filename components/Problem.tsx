@@ -1,3 +1,5 @@
+// import Spline from '@splinetool/react-spline';
+
 const Arrow = ({ extraStyle }: { extraStyle: string }) => {
   return (
     <svg
@@ -42,6 +44,7 @@ const Step = ({ emoji, text }: { emoji: string; text: string }) => {
 const Problem = () => {
   return (
     <section className="bg-neutral text-neutral-content">
+      {/* <Spline scene="https://prod.spline.design/xRVERAZdlI4Tuv3j/scene.splinecode" className="relative inset-0 z-0" /> */}
       <div className="max-w-7xl mx-auto px-8 py-16 md:py-32 text-center">
         <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
           80% of startups fail because founders never launch
@@ -50,7 +53,6 @@ const Problem = () => {
           Emails, DNS records, user authentication... There&apos;s so much going
           on.
         </p>
-
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6">
           <Step emoji="🧑‍💻" text="8 hrs to add Stripe" />
 
